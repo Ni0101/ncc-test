@@ -1,0 +1,31 @@
+.header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .hamburger {
+        display: block;
+        margin-right: 13px;
+        div {
+            border: 1.5px solid #DEDEDE;
+            width: 22px;
+        }
+
+        &:active div{
+            border: 1.5px solid #aba9a9;
+        }
+
+        div ~ div {
+            margin-top: 5px;
+        }
+    }
+}

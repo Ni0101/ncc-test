@@ -1,0 +1,134 @@
+.app {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.sidebar {
+  background-color: #191718;
+  max-height: 100%;
+  flex: 1;
+}
+.sidebar .sidebar-lists .sidebar-list:nth-child(1) a {
+  color: #FFFFFF;
+}
+.sidebar .sidebar-lists .sidebar-list {
+  border-bottom: 1px solid #5C5C5C;
+  height: 44px;
+}
+.sidebar .sidebar-lists .sidebar-list:hover {
+  background-color: #5C5C5C;
+}
+.sidebar .sidebar-lists .sidebar-list:hover a {
+  color: #FFFFFF;
+}
+.sidebar .sidebar-lists .sidebar-list a {
+  padding-left: 16px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #AAAAAA;
+  font-size: var(--size-text);
+}
+
+@media screen and (max-width: 500px) {
+  .sidebar {
+    display: none;
+  }
+}
+.main {
+  flex: 8;
+  height: 100%;
+}
+
+.header {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .hamburger {
+    display: block;
+    margin-right: 13px;
+  }
+  .hamburger div {
+    border: 1.5px solid #DEDEDE;
+    width: 22px;
+  }
+  .hamburger:active div {
+    border: 1.5px solid #aba9a9;
+  }
+  .hamburger div ~ div {
+    margin-top: 5px;
+  }
+}
+.body-section-1 {
+  background-color: #EFEFEF;
+  text-align: center;
+  padding: 38px 15%;
+}
+.body-section-1 .body-section-1_header {
+  font-size: 1.8rem;
+  padding-bottom: 18px;
+}
+.body-section-1 .body-section-1_content {
+  font-size: var(--size-text);
+}
+
+.body-section-2_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 183px;
+}
+.body-section-2_wrapper .body-section-2 ~ .body-section-2 {
+  margin-left: 50px;
+}
+.body-section-2_wrapper .body-section-2_header {
+  font-size: 24px;
+  padding-bottom: 18px;
+}
+.body-section-2_wrapper .body-section-2_main img {
+  float: left;
+}
+.body-section-2_wrapper .body-section-2_main p {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 500px) {
+  .body-section-1 {
+    margin: 0 -129px;
+  }
+  .body-section-2_wrapper {
+    display: block;
+    margin: 50px -100px;
+  }
+  .body-section-2_wrapper .body-section-2 ~ .body-section-2 {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+}
+.footer {
+  height: 79px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #DEDEDE;
+}
+.footer p {
+  margin-left: 129px;
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    margin-left: -100px;
+  }
+}/*# sourceMappingURL=styles.css.map */

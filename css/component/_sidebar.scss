@@ -1,0 +1,39 @@
+.sidebar {
+    background-color: #191718;
+    max-height: 100%;
+    flex: 1;
+    .sidebar-lists {
+
+        .sidebar-list:nth-child(1) a {
+            color: #FFFFFF;
+        }
+
+        .sidebar-list {
+            border-bottom: 1px solid #5C5C5C;
+            height: 44px;
+
+            &:hover {
+                background-color: #5C5C5C;
+                a {
+                    color: #FFFFFF;
+                }
+            }
+
+            a {
+                padding-left: 16px;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                color: #AAAAAA;
+                font-size: var(--size-text);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sidebar {
+        display: none;
+    }
+}
